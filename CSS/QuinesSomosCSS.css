@@ -1,0 +1,388 @@
+.encabezado {
+  display: flex;
+  justify-content: center;
+}
+
+.tituloHC {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .tituloHC {
+    font-size: 10px;
+  }
+}
+
+.containerHeader {
+  display: flex;
+  z-index: 1 !important;
+  position: fixed;
+  background: white;
+  width: 95%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .containerHeader {
+    height: 40px;
+  }
+}
+
+.containerHeaderScroll {
+  width: 100% !important;
+  margin-top: 0px !important;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.icono {
+  width: 15%;
+}
+@media screen and (max-width: 600px) {
+  .icono {
+    padding-left: 1px !important;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  text-align: center;
+  border-right: 2px solid #f7931e;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    width: auto;
+  }
+}
+
+.btns {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  .btns {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .linksPages {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    display: contents;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .btnsPages {
+    font-size: 11px !important;
+    width: 60% !important;
+  }
+}
+
+
+.imgIconEncabezado {
+  width: 60%;
+}
+@media screen and (max-width: 600px) {
+  .imgIconEncabezado {
+    width: 100% !important;
+  }
+}
+
+.contentLeyendHome {
+  padding-top: 120px;
+  background: #f7931e;
+}
+
+@media screen and (max-width: 600px) {
+  .contentLeyendHome {
+    padding-top: 80px;
+  }
+}
+
+.leyendHome {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  min-height: 120px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .leyendHome {
+    font-size: 25px;
+    align-items: unset;
+    min-height: 50px;
+  }
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  width: 45px !important;
+  margin: auto !important;
+  display: flex !important;
+}
+
+.carousel-control-prev {
+  left: 20px;
+}
+
+.carousel-control-next {
+  right: 20px;
+}
+
+.containerFooter {
+  display: flex;
+  background: rgb(65, 64, 64);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.contentFooter {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.contactoFooter {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opctionsContactFooter {
+  width: 20%;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  .opctionsContactFooter {
+    width: 22% !important;
+  }
+}
+
+.iconFooter {
+  width: 10%;
+}
+@media screen and (max-width: 600px) {
+  .iconFooter {
+    padding-top: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contacts {
+    font-size: 4px;
+  }
+}
+
+.iconoHOCIFFooter {
+  width: 15%;
+}
+
+.titleClientes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  min-height: 120px;
+}
+
+.imgClientes {
+  width: 100%;
+}
+
+.leyendQuienes {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  min-height: 70px;
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .leyendQuienes {
+    width: 100%;
+  }
+}
+
+.containerQuienes {
+  display: flex;
+}
+
+.mision {
+  width: 50%;
+  display: flex;
+}
+
+.logoMision {
+  width: 50%;
+  justify-content: end;
+  align-items: end;
+  display: flex;
+}
+
+.imgMision {
+  width: 30%;
+}
+
+@media screen and (max-width: 600px) {
+  .imgMision {
+    width: 80%;
+  }
+}
+
+.tituloMision {
+  font-size: 35px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+}
+
+@media screen and (max-width: 600px) {
+  .tituloMision {
+    font-size: 20px;
+    padding-left: 1px !important;
+  }
+}
+
+.vision {
+  width: 50%;
+  display: flex;
+}
+
+
+.logoVision {
+  width: 50%;
+  justify-content: end;
+  align-items: end;
+  display: flex;
+}
+
+.imgVision {
+  width: 28%;
+}
+
+@media screen and (max-width: 600px) {
+  .imgVision {
+    width: 80%;
+  }
+}
+
+.tituloVision {
+  font-size: 35px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+}
+
+@media screen and (max-width: 600px) {
+  .tituloVision {
+    font-size: 20px;
+    padding-left: 1px !important;
+  }
+}
+
+
+.containerTextoQuienes {
+  display: flex;
+}
+
+.textoMision {
+  width: 40%;
+  text-align: end;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 600px) {
+  .textoMision {
+    font-size: 15px;
+  }
+}
+
+.textoVision {
+  width: 40%;
+  text-align: initial;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 600px) {
+  .textoVision {
+    font-size: 15px;
+  }
+}
